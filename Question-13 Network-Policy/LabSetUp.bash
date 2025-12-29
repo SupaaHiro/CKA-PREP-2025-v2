@@ -111,8 +111,8 @@ spec:
   - from:
     - namespaceSelector:
         matchLabels:
-          name: frontend
-    - podSelector:
+          kubernetes.io/metadata.name: frontend
+      podSelector:
         matchLabels:
           app: frontend
     ports:
